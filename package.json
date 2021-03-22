@@ -1,0 +1,20 @@
+{
+  "name": "jit-postcss-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "TAILWIND_MODE=build postcss ./src/tailwind.css -o ./dist/build.css --verbose",
+    "dev": "TAILWIND_MODE=watch postcss ./src/tailwind.css -o ./dist/build.css -w --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.6",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.4"
+  }
+}
